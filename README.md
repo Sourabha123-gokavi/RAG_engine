@@ -1,20 +1,24 @@
-# Clone the repo
+# 🧠 Build a RAG System with Python, ChromaDB & Ollama
+> ⚡ No API keys needed. Everything runs locally.
 
-# Create and activate virtual environment
+## ✅ Prerequisites
+
+- Python 3.11+
+- [Ollama](https://ollama.com/download) (install & ensure `ollama serve` is running)
+- Git
+
+---
+
+## 🚀 Quick Setup
+
+To clone, install, run embedding, and query RAG — just run the following one-liner:
+
+```bash
+git clone https://github.com/ThomasJanssen-tech/Retrieval-Augmented-Generation.git && \
+cd Retrieval-Augmented-Generation && \
 python -m venv venv && \
 source venv/bin/activate && \
-
-# Install dependencies
 pip install -r requirements.txt && \
-
-# Pull Ollama model (if not already available)
 ollama pull llama3 && \
-
-# Start Ollama in the background (optional if already running)
-# ollama serve &
-
-# Fill ChromaDB vector store
 python fill_db.py && \
-
-# Ask your RAG question using Ollama
 python ask.py
