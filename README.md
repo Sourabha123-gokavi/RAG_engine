@@ -1,6 +1,4 @@
 # Clone the repo
-git clone https://github.com/ThomasJanssen-tech/Retrieval-Augmented-Generation.git && \
-cd Retrieval-Augmented-Generation && \
 
 # Create and activate virtual environment
 python -m venv venv && \
